@@ -10,6 +10,7 @@ The quickest way do get started is with Docker Compose, it's as simple as runnin
 
 ```sh
 cd [secretshop-dir]/cmd
+docker-compose build
 docker-compose up .
 ```
 
