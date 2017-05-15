@@ -9,7 +9,6 @@ by Manta, written by the beautiful fellows over at Dotabuff
 The quickest way do get started is with Docker Compose, it's as simple as running
 
 ```sh
-cd [secretshop-dir]/cmd
 docker-compose build
 docker-compose up .
 ```
