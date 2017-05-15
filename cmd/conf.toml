@@ -1,0 +1,9 @@
+bind = ":8080"
+auth = ""
+[stores]
+    [stores.mysql]
+    address = "mariadb"
+    port = 3306
+    user = "root"
+    pass = "toor"
+    db = "secretshop"

@@ -1,0 +1,19 @@
+version: '3'
+services:
+    mariadb:
+        image: mariadb:latest
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=toor
+            - MYSQL_DATABASE=secretshop
+        volumes:
+            - ./.database/mysql:/docker-entrypoint-initdb.d
+    secretshop:
+        build: .
+        ports:
+            - 8080:8080
+        depends_on: 
+            - "mariadb"
+        links:
+            - mariadb:mysql
